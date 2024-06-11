@@ -43,7 +43,7 @@ app.get('/', (req, res) => {
 
 // '/scim/v2' path appends to every SCIM Endpoints
 // Okta recommended url - https://developer.okta.com/docs/guides/scim-provisioning-integration-prepare/main/#base-url
-app.use('/scim/v2', scimRoute);
+// app.use('/scim/v2', scimRoute);
 
 const port = process.env.PORT || 3333;
 const server = app.listen(port, () => {
