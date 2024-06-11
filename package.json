@@ -1,9 +1,9 @@
 {
   "name": "test-scim",
   "version": "1.0.0",
-  "main": "src/main.js",
+  "main": "src/main.ts",
   "scripts": {
-    "start": "nodemon --exec 'ts-node' src/main.ts localhost 3333"
+    "start": "nodemon src/main.ts"
   },
   "author": "",
   "license": "ISC",

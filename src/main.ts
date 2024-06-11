@@ -6,17 +6,17 @@ import passportBearer from 'passport-http-bearer';
 // body-parser is required to accept the header content-type application/scim+json from Okta
 // https://www.npmjs.com/package/body-parser
 // RFC Notes: https://datatracker.ietf.org/doc/html/rfc7644#section-3.1
-import bodyParser from 'body-parser';
+// import bodyParser from 'body-parser';
 
 // For logging http requests
-import morgan from 'morgan';
+// import morgan from 'morgan';
 
 // Import the scimRoute from the scim.ts file
 import { scimRoute } from './scim';
 
 
 // const prisma = new PrismaClient();
-const BearerStrategy = passportBearer.Strategy;
+// const BearerStrategy = passportBearer.Strategy;
 
 const app = express();
 app.use(express.json())
@@ -37,9 +37,9 @@ app.get('/', (req, res) => {
 //   }
 // ));
 
-app.use(bodyParser.json({ type: 'application/scim+json' }));
+// app.use(bodyParser.json({ type: 'application/scim+json' }));
 
-app.use(morgan('combined'))
+// app.use(morgan('combined'))
 
 // '/scim/v2' path appends to every SCIM Endpoints
 // Okta recommended url - https://developer.okta.com/docs/guides/scim-provisioning-integration-prepare/main/#base-url
