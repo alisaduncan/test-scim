@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "src/main.ts",
   "scripts": {
+    "prestart": "npm ci",
     "start": "nodemon src/main.ts"
   },
   "author": "",
